@@ -18,11 +18,12 @@ Meteor.startup(function() {
     });
   }
 */
-  Channels.remove({});
-  Channels.insert({
-    name: "#general"
-  });
-  Channels.insert({
-    name: "#random"
-  });
+  if( Channels.find().count() === 0) {
+    Channels.insert({
+      name: "#general"
+    });
+    Channels.insert({
+      name: "#random"
+    });
+  }
 });

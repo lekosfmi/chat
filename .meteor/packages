@@ -22,10 +22,6 @@ accounts-base
 accounts-password
 accounts-ui
 accounts-github
-accounts-facebook
-accounts-google
 email
 iron:router
 twbs:bootstrap
-aldeed:autoform
-yogiben:autoform-modals
