@@ -28,8 +28,11 @@ Meteor.methods({
     Messages.insert(message);
   },
   newChannel: function(channel) {
-    Channel.insert({
+    Channels.insert({
       name: channel
     });
+  },
+  deleteChannel: function(channelId) {
+    Channels.remove({ _id: channelId });
   }
 });

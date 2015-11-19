@@ -1,17 +1,20 @@
 <template name="footer">
   <div class="footer">
       <div class="user-menu">
-        <a data-toggle="modal" data-target="#channelModal">
+        <a data-toggle="modal" data-target="#newChannels">
           <span class="glyphicon glyphicon-plus"></span>
-          <span class="connection_status">Add Channel</span>
+        </a>
+
+        <a data-toggle="modal" data-target="#deleteChannels">
+          <span class="glyphicon glyphicon-minus"></span>
         </a>
       </div>
       <div class="input-box">
-          <input type="text" class="input-box_text">
+          <input type="text" class="input-box_text" placeholder=">">
       </div>
   </div>
 
-  <div class="modal fade" id="channelModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal fade" id="newChannels" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <form id="channelform">
@@ -32,5 +35,46 @@
       </form>
     </div>
   </div>
+</div>
+
+<div class="modal fade" id="deleteChannels" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title text-center">Delete Channel</h4>
+    </div>
+    <div class="modal-body">
+      <ul class="list-group">
+        {{#each Channels}}
+        <li class="list-group-item">
+          <p>{{name}}</p>
+          <span class="glyphicon glyphicon-remove"></span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title text-center">Alert</h4>
+    </div>
+    <div class="modal-body">
+        <h3 class="text-center">Login/Register Please</h3>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
 </div>
 </template>

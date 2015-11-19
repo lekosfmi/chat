@@ -20,9 +20,9 @@ Meteor.startup(function() {
 */
   Channels.remove({});
   Channels.insert({
-    name: "general"
+    name: "#general"
   });
   Channels.insert({
-    name: "random"
+    name: "#random"
   });
 });

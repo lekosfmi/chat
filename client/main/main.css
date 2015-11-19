@@ -376,7 +376,43 @@ body {
   color: inherit;
 }
 
-.glyphicon-plus {
+.glyphicon-plus, .glyphicon-minus {
+  margin: auto auto;
   color: white;
   font-size: 20px;
+  transition-duration: .3s;
+}
+
+.glyphicon-remove {
+  float: right;
+  top: -15px;
+  cursor: pointer;
+}
+.glyphicon-plus:hover, .glyphicon-minus:hover {
+  color: grey;
+}
+
+.modal-content {
+  top: 9em;
+}
+.modal-header {
+  background-color: #4d394b;
+  color: white;
+}
+.modal-body .form-group, .modal-body .list-group {
+  margin-bottom: 0px;
+}
+
+.modal-body label {
+  margin-bottom: 10px;
+}
+
+.modal-body .list-group-item:hover {
+  background-color: #4c9689;
+  color: white;
+}
+
+.modal-footer {
+  border-top: none;
+  padding-top: 0px;
 }

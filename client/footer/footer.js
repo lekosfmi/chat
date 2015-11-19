@@ -1,6 +1,9 @@
 Template.footer.helpers({
   "username": function() {
     return Meteor.users().username;
+  },
+  "Channels": function() {
+    return Channels.find({});
   }
 });
 Template.footer.events({
@@ -11,20 +14,38 @@ Template.footer.events({
       if (charCode == 13) {
         e.stopPropagation();
 
-        Meteor.call('newMessage', {
-            text: $('.input-box_text').val(),
-            channel: Session.get('channel')
-        });
-
-        $('.input-box_text').val("");
+        if(!Meteor.user()) {
+          $('#alert').modal('show');
+          $('.input-box_text').val("");
+        } else {
+          Meteor.call('newMessage', {
+              text: $('.input-box_text').val(),
+              channel: Session.get('channel')
+          });
+          $('.input-box_text').val("");
+        }
         return false;
      }
     }
   },
   'submit #channelform': function(event) {
     event.preventDefault();
-    var channel = event.target.channel.value;
 
-    Meteor.call("newChannel", channel);
+    var channelValue = event.target.channel.value;
+    var channelRemoveSpace = channelValue.replace(/ /g, '_');
+    var channelLowercase = channelRemoveSpace.toLowerCase();
+    var channel = "#" + channelLowercase;
+
+    if (event.target.channel.value == "") {
+      alert("All Fields Are required");
+    } else {
+      Meteor.call("newChannel", channel);
+      $('#newChannels').modal('hide');
+      event.target.value = "";
+    }
+
+  },
+  'click .glyphicon-remove': function() {
+    Meteor.call("deleteChannel", this._id);
   }
 });
