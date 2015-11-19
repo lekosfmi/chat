@@ -1,0 +1,7 @@
+.message-history {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  padding: 0 18px 1rem 1.5rem;
+  margin-top: 50px;
+}

@@ -1,0 +1,12 @@
+<template name="sidebar">
+  <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+          <li class="sidebar-brand listings_header">
+              <a href="#">Chat</a>
+          </li>
+          {{#each channels}}
+              {{> channel name=name}}
+          {{/each}}
+      </ul>
+  </div>
+</template>

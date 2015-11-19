@@ -1,4 +1,4 @@
-Template.listings.helpers({
+Template.sidebar.helpers({
     channels: function () {
         return Channels.find();
     }

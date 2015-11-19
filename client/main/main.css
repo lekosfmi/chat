@@ -77,22 +77,14 @@ html {
 }
 
 /* line 16, ../tests/sass/_layout.scss */
-body {
+body, html {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding-top: 53px;
-  padding-bottom: 64px;
 }
 
 /* line 23, ../tests/sass/_layout.scss */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 53px;
-  width: 100%;
-}
+
 
 /* line 31, ../tests/sass/_layout.scss */
 .main {
@@ -100,13 +92,6 @@ body {
 }
 
 /* line 35, ../tests/sass/_layout.scss */
-.footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 64px;
-  width: 100%;
-}
 
 /* line 1, ../tests/sass/components/_header.scss */
 .team-menu {
@@ -152,54 +137,6 @@ body {
   overflow-x: hidden;
 }
 
-/* line 11, ../tests/sass/components/_main.scss */
-.message-history {
-  margin-left: 220px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 100%;
-  padding: 0 18px 1rem 1.5rem;
-}
-
-/* line 4, ../tests/sass/components/_listings.scss */
-.listings_channels {
-  margin: 1rem 0 2rem;
-}
-
-/* line 8, ../tests/sass/components/_listings.scss */
-.listings_header {
-  text-align: left;
-  font-size: .8rem;
-  line-height: 1.25rem;
-  margin: 0 1rem .1rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ab9ba9;
-  width: 165px;
-  position: relative;
-}
-
-/* line 20, ../tests/sass/components/_listings.scss */
-.channel_list {
-  list-style-type: none;
-  text-align: left;
-  color: #ab9ba9;
-}
-
-/* line 26, ../tests/sass/components/_listings.scss */
-.channel {
-  height: 24px;
-  line-height: 24px;
-  -moz-border-radius-topright: 0.25rem;
-  -webkit-border-top-right-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  -moz-border-radius-bottomright: 0.25rem;
-  -webkit-border-bottom-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-  margin-right: 17px;
-  color: #ffffff;
-  padding-left: 1rem;
-}
 
 /* line 35, ../tests/sass/components/_listings.scss */
 .unread {
@@ -341,35 +278,10 @@ body {
 }
 
 /* line 1, ../tests/sass/components/_input-box.scss */
-.input-box {
-  height: 100%;
-  margin-left: 220px;
-}
+
 
 /* line 6, ../tests/sass/components/_input-box.scss */
-.input-box_text {
-  font-size: .95rem;
-  width: 90%;
-  margin-left: 2%;
-  margin-bottom: auto;
-  line-height: 1.2rem;
-  border: 2px solid #e0e0e0;
-  -moz-border-radius: 0.2rem;
-  -webkit-border-radius: 0.2rem;
-  border-radius: 0.2rem;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #3d3c40;
-  -webkit-appearance: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  outline: 0;
-  bottom: 0;
-  min-height: 41px !important;
-  padding: 9px 5px 9px 8px;
-}
+
 
 .channel_name {
   text-decoration: none;
