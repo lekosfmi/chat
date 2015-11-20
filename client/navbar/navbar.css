@@ -1,0 +1,27 @@
+.navbar {
+  background-color: #7C4D80;
+  border-color: white;
+  color: white;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: white;
+}
+.glyphicon-plus, .glyphicon-minus {
+  margin: auto auto;
+  margin-right: 5px;
+  transition-duration: .3s;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #4c9689;
+  color: white;
+}
+.glyphicon-plus:hover, .glyphicon-minus:hover {
+  color: #4c9689;
+}
+.dropdown-menu {
+  padding: 0;
+}
+.dropdown-menu > li > a {
+  cursor: pointer;
+  font-weight: bold;
+}

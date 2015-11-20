@@ -14,7 +14,7 @@
   color: white;
 }
 .btn-list.toggled {
-  background-color: rgb(255, 166, 207);
+  background-color: #7C4D80;
   color: white
 }
 .btn-list:hover, .btn:focus {

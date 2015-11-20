@@ -1,8 +1,3 @@
-Accounts.ui.config({
-  passwordSignupFields: 'USERNAME_AND_EMAIL'
-});
-
-
 Template.registerHelper("usernameFromId", function (userId) {
     var user = Meteor.users.findOne({_id: userId});
     if (typeof user === "undefined") {
