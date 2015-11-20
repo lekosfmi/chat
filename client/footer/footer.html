@@ -9,9 +9,19 @@
           <span class="glyphicon glyphicon-minus"></span>
         </a>
       </div>-->
-      <div class="input-box">
-          <input type="text" class="input-box_text" placeholder=">">
-      </div>
+
+
+
+      <form id="newMessage" class="input-group input-box">
+        <div class="input-group-btn">
+          <button type="button" id="menu-toggle" class="btn btn-list"><span class="glyphicon glyphicon-list"></span></button>
+        </div>
+        <input type="text" class="input-box_text" name="message" placeholder="">
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </form>
+
   </div>
 
   <div class="modal fade" id="newChannels" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

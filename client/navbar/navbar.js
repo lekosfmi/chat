@@ -5,11 +5,5 @@ Template.navbar.helpers({
 })
 
 Template.navbar.events({
-  "click #menu-toggle": function(event) {
-    event.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-    $(".footer").toggleClass("toggled");
-
-    console.log("Toggle");
-  }
+  
 })

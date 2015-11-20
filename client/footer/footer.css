@@ -8,13 +8,24 @@
 }
 .footer.toggled {
   width: 95%;
-  left: 10px;
+  left: 20px;
+}
+.btn-list {
+  color: white;
+}
+.btn-list.toggled {
+  background-color: rgb(255, 166, 207);
+  color: white
+}
+.btn-list:hover, .btn:focus {
+  outline: none;
+  color: white;
 }
 .input-box_text {
   position: relative;
   font-size: .95rem;
-  width: 95%;
-  margin: auto 1% auto 1%;
+  width: 100%;
+  margin: auto auto auto auto;
   line-height: 1.2rem;
   border: 2px solid #e0e0e0;
   -moz-border-radius: 0.2rem;
@@ -33,6 +44,10 @@
   min-height: 41px !important;
   padding: 9px 5px 9px 8px;
 }
+.footer .btn {
+  padding: 9px 20px 9px 20px
+}
+
 @media(max-width:768px) {
   .footer {
     width: 95%;
