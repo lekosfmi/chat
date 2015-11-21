@@ -13,7 +13,8 @@ Template.footer.events
       $('.input-box_text').attr('placeholder', "")
 
     if event.target.message.value is ""
-      $('.input-box_text').attr('placeholder', "You haven't type anything! >.<")
+      emptyMessage = "You haven't typed anything! >.<"
+      $('.input-box_text').attr('placeholder', emptyMessage)
     else if !Meteor.userId()
       $('#alert').modal 'show'
       clear()
