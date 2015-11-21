@@ -8,13 +8,21 @@ Template.footer.events
     message = event.target.message.value
     channel = Session.get 'channel'
 
-    if Meteor.userId()
-      Meteor.call 'newMessage', message, channel
+    clear = ->
       $('.input-box_text').val ""
-    else
+      $('.input-box_text').attr('placeholder', "")
+
+    if event.target.message.value is ""
+      $('.input-box_text').attr('placeholder', "You haven't type anything! >.<")
+    else if !Meteor.userId()
       $('#alert').modal 'show'
-      $('.input-box_text').val ""
+      clear()
+    else
+      Meteor.call 'newMessage', message, channel
+      clear()
+
 
   "click #menu-toggle": (event) ->
     event.preventDefault()
     $("#wrapper, .footer, .btn-list").toggleClass "toggled"
+    $('#menu-toggle').toggleClass "toggle-active"

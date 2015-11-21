@@ -35,19 +35,17 @@
 .navbar-default .navbar-toggle:hover  {
   background-color: #4c9689;
 }
-.navbar-toggle-active {
-  background-color: #4c9689; 
-}
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: white;
-    text-align: center; 
+    text-align: center;
     padding-right: 15px;
     padding-left: 15px;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
     background-color: #4c9689;
-    color: white; 
+    color: white;
   }
   .navbar-nav {
     margin: 0 auto;

@@ -4,3 +4,6 @@ Template.navbar.helpers
 
 Template.navbar.events
   "click .logout": -> Meteor.logout()
+
+  "click .navbar-toggle": ->
+    $('.navbar-toggle').toggleClass "toggle-active"

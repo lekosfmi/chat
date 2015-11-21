@@ -25,3 +25,4 @@ email
 iron:router
 twbs:bootstrap
 coffeescript
+fastclick

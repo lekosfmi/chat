@@ -298,3 +298,7 @@ body, html {
   background-color: #4c9689;
   color: white;
 }
+
+.toggle-active {
+  background-color: #4c9689;
+}
