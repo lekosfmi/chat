@@ -300,5 +300,12 @@ body, html {
 }
 
 .toggle-active {
-  background-color: #4c9689;
+  background-color: #4c9689 !important;
+}
+
+@media (max-width: 768px) {
+  .btn:hover {
+    background-color: #7C4D80;
+    color: white;
+  }
 }
