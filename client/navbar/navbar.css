@@ -25,3 +25,31 @@
   cursor: pointer;
   font-weight: bold;
 }
+.navbar-toggle, .navbar-default .navbar-toggle:focus {
+  border: none;
+  background-color: #7C4D80;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle:hover  {
+  background-color: #4c9689;
+}
+.navbar-toggle-active {
+  background-color: #4c9689; 
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+    text-align: center; 
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #4c9689;
+    color: white; 
+  }
+  .navbar-nav {
+    margin: 0 auto;
+  }
+}
