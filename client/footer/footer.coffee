@@ -1,6 +1,7 @@
 Template.footer.helpers
   "username": -> Meteor.users().username
 
+
 Template.footer.events
   'submit #newMessage': (event) ->
     event.preventDefault()
