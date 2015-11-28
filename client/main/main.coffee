@@ -1,11 +1,11 @@
 Template.registerHelper "usernameFromId", (userId) ->
   user = Meteor.users.findOne _id: userId
 
-  if user? then user.username else "Anonymous"
+  if typeof user is "undefined" then "Anonymous" else user.username
 
-  #user.services.github.username if user.services.github?
-  #user.services.facebook.username if typeof user.services.facebook isnt "undefined"
-  #user.services.google.username if typeof user.services.google isnt "undefined"
+  #if typeof user.services.facebook isnt "undefined" then user.profile.name
+
+#  if typeof user isnt "undefined" then user.profile.name
 
 
 

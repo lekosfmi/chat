@@ -7,3 +7,6 @@ Template.navbar.events
 
   "click .navbar-toggle": ->
     $('.navbar-toggle').toggleClass "toggle-active"
+
+  "click .facebook-login": ->
+    Meteor.loginWithFacebook()
