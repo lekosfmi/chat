@@ -4,6 +4,12 @@ Router.configure
 
 Router.route '/:channel', ->
   Session.set 'channel', this.params.channel
+  @subscribe 'messages'
+  @subscribe 'allUsernames'
   @render 'messages'
 
-Router.route '/', -> @render 'layout'
+
+Router.route '/', ->
+  @subscribe 'channels'
+  @subscribe 'messages'
+  @redirect '/#general'

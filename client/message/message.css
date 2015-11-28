@@ -4,4 +4,53 @@
   height: 100%;
   padding: 0 18px 1rem 1.5rem;
   margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.message_profile-pic, .glyphicon-user {
+  position: absolute;
+  font-size: 2.5em;
+  color: #7C4D80;
+  top: 10px;
+  left: -10px;
+  display: block;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  width: 36px;
+  height: 36px;
+  /*background-image: url("http://i.imgur.com/LikUNLc.png");*/
+  background-size: cover;
+}
+
+.message_username {
+  font-weight: 900;
+  padding-right: .25rem;
+  color: #3d3c40 !important;
+  margin-left: 0;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* line 31, ../tests/sass/components/_message.scss */
+.message_timestamp {
+  text-align: left;
+  display: inline;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #babbbf;
+  font-size: 12px;
+  line-height: 1.2rem;
+  width: 36px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 45, ../tests/sass/components/_message.scss */
+.message_content {
+  color: #4c9689;
+  display: block;
+  min-height: 1rem;
+  font-weight: 800;
 }

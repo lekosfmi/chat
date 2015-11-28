@@ -21,6 +21,7 @@ Template.footer.events
       clear()
     else
       Meteor.call 'newMessage', message, channel
+      $("html, body").animate scrollTop: $(document).height()
       clear()
 
 
