@@ -1,4 +1,4 @@
-#Public Chat System
+#Chat App
 
 Slack clone built by using [Meteor](www.meteor.com).
 
